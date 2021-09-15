@@ -7,7 +7,6 @@ import io.agileintelligence.ppmt.domain.Project;
 
 @Repository
 public interface ProjectRepository extends CrudRepository<Project, Long>{
-	//Out of the box functionality
 	@Override
 	default Iterable<Project> findAllById(Iterable<Long> ids) {
 		// TODO Auto-generated method stub
